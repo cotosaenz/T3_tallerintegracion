@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/T3_tallintegracion/static/css/main.ea857961.chunk.css",
-    "main.js": "/T3_tallintegracion/static/js/main.1b449f97.chunk.js",
-    "main.js.map": "/T3_tallintegracion/static/js/main.1b449f97.chunk.js.map",
-    "runtime-main.js": "/T3_tallintegracion/static/js/runtime-main.aa1f5688.js",
-    "runtime-main.js.map": "/T3_tallintegracion/static/js/runtime-main.aa1f5688.js.map",
-    "static/css/2.69a39906.chunk.css": "/T3_tallintegracion/static/css/2.69a39906.chunk.css",
-    "static/js/2.acfb9e41.chunk.js": "/T3_tallintegracion/static/js/2.acfb9e41.chunk.js",
-    "static/js/2.acfb9e41.chunk.js.map": "/T3_tallintegracion/static/js/2.acfb9e41.chunk.js.map",
-    "index.html": "/T3_tallintegracion/index.html",
-    "static/css/2.69a39906.chunk.css.map": "/T3_tallintegracion/static/css/2.69a39906.chunk.css.map",
-    "static/css/main.ea857961.chunk.css.map": "/T3_tallintegracion/static/css/main.ea857961.chunk.css.map",
-    "static/js/2.acfb9e41.chunk.js.LICENSE.txt": "/T3_tallintegracion/static/js/2.acfb9e41.chunk.js.LICENSE.txt",
-    "static/media/plane.31d92501.png": "/T3_tallintegracion/static/media/plane.31d92501.png",
-    "static/media/point.ae993290.png": "/T3_tallintegracion/static/media/point.ae993290.png",
-    "static/media/point2.ba3c7903.png": "/T3_tallintegracion/static/media/point2.ba3c7903.png"
+    "main.css": "/T3_tallerintegracion/static/css/main.ea857961.chunk.css",
+    "main.js": "/T3_tallerintegracion/static/js/main.1b449f97.chunk.js",
+    "main.js.map": "/T3_tallerintegracion/static/js/main.1b449f97.chunk.js.map",
+    "runtime-main.js": "/T3_tallerintegracion/static/js/runtime-main.df55628e.js",
+    "runtime-main.js.map": "/T3_tallerintegracion/static/js/runtime-main.df55628e.js.map",
+    "static/css/2.69a39906.chunk.css": "/T3_tallerintegracion/static/css/2.69a39906.chunk.css",
+    "static/js/2.7b4125c5.chunk.js": "/T3_tallerintegracion/static/js/2.7b4125c5.chunk.js",
+    "static/js/2.7b4125c5.chunk.js.map": "/T3_tallerintegracion/static/js/2.7b4125c5.chunk.js.map",
+    "index.html": "/T3_tallerintegracion/index.html",
+    "static/css/2.69a39906.chunk.css.map": "/T3_tallerintegracion/static/css/2.69a39906.chunk.css.map",
+    "static/css/main.ea857961.chunk.css.map": "/T3_tallerintegracion/static/css/main.ea857961.chunk.css.map",
+    "static/js/2.7b4125c5.chunk.js.LICENSE.txt": "/T3_tallerintegracion/static/js/2.7b4125c5.chunk.js.LICENSE.txt",
+    "static/media/plane.31d92501.png": "/T3_tallerintegracion/static/media/plane.31d92501.png",
+    "static/media/point.ae993290.png": "/T3_tallerintegracion/static/media/point.ae993290.png",
+    "static/media/point2.ba3c7903.png": "/T3_tallerintegracion/static/media/point2.ba3c7903.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.aa1f5688.js",
+    "static/js/runtime-main.df55628e.js",
     "static/css/2.69a39906.chunk.css",
-    "static/js/2.acfb9e41.chunk.js",
+    "static/js/2.7b4125c5.chunk.js",
     "static/css/main.ea857961.chunk.css",
     "static/js/main.1b449f97.chunk.js"
   ]
