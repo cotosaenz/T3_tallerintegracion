@@ -18,6 +18,7 @@ export default class App extends Component {
     messages: [],
     flights: [],
     positions: [],
+    planes: [],
     p2: [],
     fp: {}
   }
@@ -46,10 +47,12 @@ export default class App extends Component {
       );
       var positions = [];
       var fp = {};
+      var planes = [];
       var c = 0;
       data.map( flight => {
         positions.push(flight.origin);
         fp[flight.code] = c;
+        planes.push(c);
         c += 1;
         return 1;
         }
@@ -62,6 +65,11 @@ export default class App extends Component {
       this.setState(
         {
           fp
+        }
+      );
+      this.setState(
+        {
+          planes
         }
       );
     });
@@ -110,6 +118,7 @@ export default class App extends Component {
           }
         );
       }
+      // el html y css del chat me base de aca: https://www.bootdey.com/snippets/view/animated-chat-window#html
     });
   }
 
@@ -117,7 +126,7 @@ export default class App extends Component {
     const scroll = this.chatContainer.current.scrollHeight - this.chatContainer.current.clientHeight; 
     this.chatContainer.current.scrollTo(0, scroll);
   };
-  //https://codesandbox.io/s/8l2y0o24x9?file=/src/index.js:555-643
+  // esta funcion la obtuve de aca: https://codesandbox.io/s/8l2y0o24x9?file=/src/index.js:555-643
 
   render() {
     return (
@@ -140,10 +149,10 @@ export default class App extends Component {
                   {this.state.p2.map( p =>
                     <Marker position={p} icon={Point2}></Marker>
                   )}
-                  {this.state.positions.map( pos =>
-                    <Marker position={pos} icon={Plane}>
+                  {this.state.planes.map( plane =>
+                    <Marker position={this.state.positions[plane]} icon={Plane}>
                       <Popup>
-                        Code: {pos} <br />
+                        Code: {this.state.flights[plane].code} <br />
                       </Popup>
                     </Marker>
                   )};
@@ -151,13 +160,10 @@ export default class App extends Component {
               </div>
               <div className="space"></div>
               <div className="flights_box">
-                Vuelos:
-                {this.state.flights.map( flight => {
-                  <li key={flight.code}>Code: {flight.code},  Airline: {flight.airline},  Origen: ({flight.origin[0]}, {flight.origin[1]}),  Destino: ({flight.destination[0]}, {flight.destination[1]}),  Plane: {flight.plane}.</li>;
-                  {flight.passengers.map(pass => 
-                    <li key={pass.name}>Nombre: {pass.name},  Edad: {pass.age}</li>
-                    )};
-                })}
+                <h4>Vuelos:</h4>
+                {this.state.flights.map( flight => 
+                  <li key={flight.code}>Code: {flight.code},  Airline: {flight.airline},  Origen: ({flight.origin[0]}, {flight.origin[1]}),  Destino: ({flight.destination[0]}, {flight.destination[1]}),  Plane: {flight.plane}, Passangers: {flight.passengers[0].name}...</li>
+                )}
               </div>
             </div>
             <div className='col-4'>
